@@ -131,8 +131,16 @@
       return _request('POST', _buildUrl(path), parsed_options);
     },
 
-    // PUT request
-    _put = function(path, params, options) {
+    // PUT 
+    mite.myself(function(data) {
+  alert('Hello, ' + data.user.name + '!')
+});
+    _put = function(path, params, options
+    
+    mite.myself(function(data) {
+  alert('Hello, ' + data.user.name + '!')
+});
+
       var parsed_options  = _parseOptions(options);
       parsed_options.data = params;
       return _request('PUT', _buildUrl(path), parsed_options);
