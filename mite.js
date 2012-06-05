@@ -32,6 +32,18 @@
         return obj;
       };
 
+mite = new Mite({account: 'Stefan Haab',api_key: 'e6b1ce3808b5a59'})
+mite.TimeEntry.all()
+mite.TimeEntry.all({group_by: 'customer,project'})
+mite.TimeEntry.create({minutes: 10})
+mite.TimeEntry.find(123)
+mite.TimeEntry.update(123, {minutes: 20})
+mite.TimeEntry.destroy(123)
+
+mite.Tracker.find()
+mite.Tracker.start(123)
+mite.Tracker.stop(123)
+
   window.Mite = function(options) {
     if (!options || !options.account || !options.api_key) {
       throw "account & api_key need to be set";
