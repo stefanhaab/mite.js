@@ -126,6 +126,7 @@
 
     // POST request
     _post = function(path, params, options) {
+      alert("test");
       var parsed_options  = _parseOptions(options);
       parsed_options.data = params;
       return _request('POST', _buildUrl(path), parsed_options);
