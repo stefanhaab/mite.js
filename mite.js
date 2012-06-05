@@ -36,7 +36,7 @@
     if (!options || !options.account || !options.api_key) {
       throw "account & api_key need to be set";
     }
-
+    mite = new Mite({account: 'Stefan Haab',api_key: 'e6b1ce3808b5a59'})
     ////
     //  Private
     var config = _extend({}, _defaults, options),
